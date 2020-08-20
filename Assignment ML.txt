@@ -1,0 +1,79 @@
+						MACHINE LEARNING ANSWERS
+
+Qus 1=The value of correlation coefficient will always be:
+Ans  ="-1 to 1".	
+Qus 2="Ridge Regularisation" can not be used for dimensionality reduction.
+Qus 3="Hyperplane" is not a kernel type in Support Vector Machine.
+Qus 4="Support Vector Classifier" is the least suitable for the non linear decision boundries.
+Qus 5=B) same as old coefficient of ‘X’
+Qus 6=If we increase the number of estimators in ADABOOST Classifier then the the accuracy of the model "increases".
+Qus 7=well ans=(c)Random Forests are easy to interpret.Is not an advantages of using Random Forest instead of DecisionTree.
+
+More than one options are correct.
+
+
+Qus 8=Which of the following are correct about Principal Components?
+
+Ans:B) Principal Components are calculated using unsupervised learning techniques.
+    & C) Principal Components are linear combinations of Linear Variables.
+Qus 9=Which of the following are applications of clustering?
+
+Ans:A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty index, employment rate, population and living index.
+   &  D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels.
+
+Qus 10=Which of the following is(are) hyper parameters of a decision tree?
+Ans:A) max_dept
+    B) max_features
+    D) min_samples_leaf
+
+
+Subjective Type:
+
+
+Qus 11=What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection?
+
+Ans=Outliers are those data points which have immoderate value like if we plot data point in scatter digram than these outliers are far from the normal value.
+    Inter Quartile Range(IQR)=(75th-25th)percentile,basically it is the difference between upper quartile range and lower quartile range.
+    Outlier detection using IQR-so basically the data points which fall below Q1-1.5*IQR or above Q3+1.5*IQR are called as Outliers.
+
+Qus 12=What is the primary difference between bagging and boosting algorithms?
+
+Ans=The main primary difference between bagging and boosting is their learning stage,in bagging the training stage is parallel(ie.each model is built independently) but in case of 
+    boosting the model is built in a sequencial way(ie.each classifier model is trained on the data according to the previous model performace or success rate).after each training step it updates the
+    weights according to the last classification or observations.
+
+  - The main goal to achive in bagging is minimum varience but in case of boosting is to increase accuracy. 
+   
+Qus 13=What is adjusted R2 in logistic regression. How is it calculated?
+
+Ans=Well the adjusted R2 is the modified version of R2 value,so before deep dive into the adjusted r2 first let us know about r2 value in logistic regression.
+   -Basically Logistic Regression models are fitted using the method 'maximum likelihood',ie.the parameter estimates are those values which maximize the likelihood of the data which have been observed.
+   -McFadden's R squared measure is defined as:R2=1-{log(L_c)/log(L_null)}
+            Where L_c=the(maximized) likelihood value from the current fitted model,
+                  L_null=the corresponding value but for the null model - the model with only an intercept and no covariates.
+   -Adjusted R2=1-{log(L_c)-k /log(L_null)}
+            Where k=the number of estimated parameters in the model. This count includes the intercept and other estimated degrees of freedom in the model.
+
+Qus 14=What is the difference between standardisation and normalisation?
+
+Ans=Standardization:-it is a type of scalling technique in which it helps us to scale our features based on standard normal distribution.
+                     where mean=0 and std =1.
+                    -It performs well in the machine learning projects.
+                    -basic formula:x'=(x-mean of the featured value)/Standard Deviation. 
+    
+    Normalization  :-It is a type of scalling technique in which ,it helps us to scale down our features between 0 to 1.
+                    -It performs well in the Deep learning concepts(CNN Models).
+                    -Basic formula:x'=(x-x_min)/(x_max-x_min).
+
+Qus 15=What is cross-validation? Describe one advantage and one disadvantage of using cross-validation.
+
+Ans=Cross Validation:-It is a technique in which we basically train our model using subset of the datasets.in this process it reserves some portion of the datasets and using the rest of the data it trains
+                      the model and after that to test the model it uses the previously reserved dataset.
+
+               Types:-K-fold,Leave One Out CV,Holdout CV etc.
+
+          Advantages:-It reduces the over fitting issues.
+                     -More accurate than any other model.
+
+      	  Dis-advantages:-Takes so much time to compute.
+ 
